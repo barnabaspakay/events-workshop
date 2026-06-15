@@ -1,0 +1,73 @@
+#root {
+    background-color: #cbcbd1
+}
+
+body {
+    margin: 0px;
+}
+
+h1,
+h2 {
+    color: black;
+}
+
+.red {
+    color: #c7420e;
+}
+
+.search {
+    position: relative;
+    top: 25px;
+    left: 25%;
+}
+
+.albumCard {
+    margin: 10px;
+    position: relative;
+    top: 100px;
+
+    background-color: #fff;
+    box-shadow: 0 2px 8px #0000001a;
+    border-radius: 10px;
+    border: 1px solid #e4e5e9;
+    min-height: 44px;
+    padding: 8px;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+
+.albumCard>button {
+    --primary-color: #6366f1;
+    --secondary-color: #a855f7;
+    --text-color: #ffffff;
+
+    position: relative;
+    padding: 12px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+}
+
+
+.albumCard>button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(168, 85, 247, 0.5);
+    letter-spacing: 1px;
+}
+
+
+/* 
+tag selector -> body -> <body></body>
+                h1 -> <h1></h1>
+class selector -> .albumCard
+*/
