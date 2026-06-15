@@ -17,7 +17,7 @@ function createAlbumElement(album) {
     albumContainer.classList.add("albumCard")
 
     albumName.innerHTML = `<u>Name</u>: ${album.name}`
-    artistName.innerText = `Artist: ${album.vendor.name}`
+    artistName.textContent = `Artist: ${album.vendor.name}`
     albumContainer.appendChild(albumName)
     albumName.insertAdjacentElement("beforebegin", artistName)
     // const trackList = document.createElement("ul")
@@ -31,7 +31,7 @@ function createTrackList(tracks) {
     const trackList = document.createElement("ul")
     for (const track of tracks) {
         const trackItem = document.createElement("li")
-        trackItem.innerText = track.name
+        trackItem.textContent = track.name
         trackList.appendChild(trackItem)
     }
     return trackList
