@@ -39,8 +39,8 @@ li:hover {
 }
 
 .albumCard>button {
-    --primary-color: #6366f1;
-    --secondary-color: #a855f7;
+    --primary-color: #025e0e;
+    --secondary-color: #355843;
     --text-color: #ffffff;
 
     position: relative;
